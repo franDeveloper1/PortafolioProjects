@@ -1,0 +1,141 @@
+/* ========================================
+   GENERAL
+======================================== */
+* { box-sizing: border-box; margin:0; padding:0; }
+
+body {
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #020617, #0f172a, #020617, #022c22);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: white;
+  padding-top: 70px;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+header {
+  position: fixed; top:0; left:0; width:100%;
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
+  padding:15px 20px; background:rgba(2,6,23,0.85); backdrop-filter:blur(10px); z-index:1000;
+}
+
+header h1 { font-size:1.8rem; font-weight:600; }
+
+nav { display:flex; flex-wrap:wrap; }
+nav a { color:white; margin:5px 15px; text-decoration:none; font-weight:500; transition:0.3s; }
+nav a:hover { color:#22c55e; }
+
+/* ========================================
+   HERO
+======================================== */
+.hero { height:90vh; display:flex; justify-content:center; align-items:center; text-align:center; position:relative; }
+.hero::before { content:""; position:absolute; top:0;left:0;right:0;bottom:0; background: rgba(0,0,0,0.7); z-index:0; }
+.hero-content { position:relative; z-index:1; max-width:600px; background: rgba(0,0,0,0.35); padding:40px; border-radius:20px; backdrop-filter:blur(8px); }
+.hero h1 { font-size:3rem; margin-bottom:15px; }
+.hero h2 { font-size:1.5rem; color:#22c55e; margin-bottom:20px; }
+
+/* ========================================
+   BOTONES
+======================================== */
+.btn { display:inline-block; margin-top:20px; padding:14px 32px; background:#22c55e; color:white; text-decoration:none; border-radius:30px; font-weight:500; transition:0.3s; }
+.btn:hover { background:#16a34a; transform:scale(1.05); }
+.btn-card { display:inline-block; margin-top:15px; color:#22c55e; text-decoration:none; }
+
+/* ========================================
+   SECCIONES
+======================================== */
+section { padding:100px 20px; text-align:center; position:relative; }
+.about, .services { margin-bottom:40px; }
+.services ul { list-style: none; margin-top:20px; }
+.services li { margin:10px 0; }
+
+/* ========================================
+   CARDS
+======================================== */
+.cards, .features { display:flex; justify-content:center; flex-wrap:wrap; gap:25px; margin:0 auto; }
+.cards .card, .features .card {
+  background: rgba(255,255,255,0.05); /* casi transparente como el fondo */
+  color:white;
+  padding:25px; width:250px; border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  transition: transform 0.3s, background 0.3s;
+}
+.cards .card h3, .features .card h3 { font-weight:600; margin-bottom:10px; }
+.cards .card p, .features .card p { font-size:0.95rem; color:#d1d1d1; }
+.cards .card:hover, .features .card:hover { transform: translateY(-10px) scale(1.02); background: rgba(255,255,255,0.1); }
+
+/* ========================================
+   EXTRA
+======================================== */
+.extra { background: rgba(2,6,23,0.85); backdrop-filter:blur(10px); color:white; padding:60px 20px; border-radius:15px; margin:40px auto; max-width:1200px; }
+.extra h2 { font-size:2.5rem; margin-bottom:10px; }
+.extra p { font-size:1.1rem; margin-bottom:40px; max-width:600px; margin-left:auto; margin-right:auto; opacity:0.85; }
+
+/* ========================================
+   CONTACTO
+======================================== */
+.contact { background: rgba(2,6,23,0.85); padding:80px 20px; border-radius:15px; }
+
+/* ========================================
+   INSTAGRAM FLOAT
+======================================== */
+.instagram-float { position:fixed; bottom:20px; right:20px; width:50px; height:50px; border-radius:50%; background:#E1306C; display:flex; justify-content:center; align-items:center; box-shadow:0 4px 15px rgba(0,0,0,0.3); z-index:1000; transition:transform 0.3s, box-shadow 0.3s; }
+.instagram-float:hover { transform:scale(1.1); box-shadow:0 6px 20px rgba(0,0,0,0.4); }
+
+/* ========================================
+   ANIMACIÓN FONDO
+======================================== */
+@keyframes gradientMove { 0%{background-position:0% 50%;} 50%{background-position:100% 50%;} 100%{background-position:0% 50%;} }
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media(max-width:768px){
+  .features, .cards { flex-direction:column; align-items:center; }
+  header { flex-direction:column; align-items:center; }
+  nav { margin-top:10px; justify-content:center; }
+  .hero h1 { font-size:2.2rem; }
+  .hero h2 { font-size:1.2rem; }
+}
+/* ========================================
+   SERVICIOS ESTÉTICOS
+======================================== */
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.service-block {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 250px;
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+}
+
+.service-block h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #22c55e;
+}
+
+.service-block p {
+  font-size: 1rem;
+  color: #d1d1d1;
+  line-height: 1.4;
+}
+
+.service-block:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+}
