@@ -3,187 +3,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impulso Web – Páginas web profesionales</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>NexoDev – Desarrollo Web Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="noise"></div>
 
   <!-- HEADER -->
   <header id="header">
-    <div class="logo">
-      <div class="logo-icon">IW</div>
-      <span>Impulso Web</span>
-    </div>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">&#9776;</button>
+    <a href="#inicio" class="logo">
+      <div class="logo-mark"><span>N</span></div>
+      <span class="logo-text">NexoDev</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+      <span></span><span></span>
+    </button>
     <nav id="mainNav">
       <a href="#inicio">Inicio</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#servicios">Servicios</a>
-      <a href="#contacto" class="nav-cta">Contacto</a>
+      <a href="#contacto" class="nav-cta">Hablemos →</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="inicio">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
+
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="avail-dot"></span>
         Disponible para nuevos proyectos
       </div>
-      <h1>Tu negocio merece <span class="highlight">una web que vende</span></h1>
-      <p class="hero-sub">Diseño páginas web profesionales para emprendimientos y negocios que quieren crecer online y atraer más clientes.</p>
-      <div class="hero-actions">
-        <a href="#proyectos" class="btn btn-primary">Ver trabajos</a>
-        <a href="#contacto" class="btn btn-outline">Hablar por WhatsApp</a>
+      <h1>
+        <span>Webs que</span>
+        <em>convierten</em>
+        <span>visitas en</span>
+        <span>clientes.</span>
+      </h1>
+      <p>Diseño y desarrollo páginas web de alto impacto para negocios que quieren dominar su mercado online.</p>
+      <div class="hero-btns">
+        <a href="#proyectos" class="btn-primary">Ver trabajos</a>
+        <a href="#contacto" class="btn-secondary">Contactarme</a>
       </div>
-      <div class="hero-trust">
-        <span>✓ Respuesta en menos de 24 hs</span>
-        <span>✓ Sin compromiso</span>
-        <span>✓ Diseño 100% personalizado</span>
+      <div class="hero-stats">
+        <div class="hs-item"><strong>+15</strong><span>Proyectos</span></div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong>100%</strong><span>Satisfacción</span></div>
+        <div class="hs-sep"></div>
+        <div class="hs-item"><strong>48h</strong><span>Entrega promedio</span></div>
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="mockup-browser">
-        <div class="browser-bar">
-          <span class="dot red"></span>
-          <span class="dot yellow"></span>
-          <span class="dot green"></span>
-          <div class="url-bar">impulso-gym.vercel.app</div>
+
+    <div class="hero-right">
+      <div class="browser-mockup">
+        <div class="bm-bar">
+          <div class="bm-dots">
+            <span class="bm-dot r"></span>
+            <span class="bm-dot y"></span>
+            <span class="bm-dot g"></span>
+          </div>
+          <div class="bm-url">nexodev.com</div>
         </div>
-        <div class="browser-body">
-          <div class="mock-hero-line thick"></div>
-          <div class="mock-hero-line medium"></div>
-          <div class="mock-hero-line short"></div>
-          <div class="mock-btn-row">
-            <div class="mock-btn blue"></div>
-            <div class="mock-btn outline"></div>
+        <div class="bm-body">
+          <div class="bm-nav-strip"></div>
+          <div class="bm-hero-block">
+            <div class="bml thick"></div>
+            <div class="bml medium"></div>
+            <div class="bml short"></div>
+            <div class="bm-ctas">
+              <div class="bm-cta solid"></div>
+              <div class="bm-cta outline"></div>
+            </div>
           </div>
-          <div class="mock-cards">
-            <div class="mock-card"></div>
-            <div class="mock-card"></div>
-            <div class="mock-card"></div>
+          <div class="bm-cards">
+            <div class="bm-card"></div>
+            <div class="bm-card"></div>
+            <div class="bm-card"></div>
           </div>
+        </div>
+        <div class="bm-status">
+          <span class="bm-status-dot"></span>
+          Sitio en línea
         </div>
       </div>
+      <div class="hero-deco-1"></div>
+      <div class="hero-deco-2"></div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-bar"><div class="scroll-bar-inner"></div></div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="stats">
-    <div class="stats-inner">
-      <div class="stat-item">
-        <strong>+15</strong>
-        <span>Proyectos entregados</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <strong>100%</strong>
-        <span>Clientes satisfechos</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <strong>48 hs</strong>
-        <span>Tiempo de entrega promedio</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <strong>3</strong>
-        <span>Tecnologías dominadas</span>
-      </div>
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Diseño Web</span><span class="sep">—</span>
+      <span>Tiendas Online</span><span class="sep">—</span>
+      <span>Landing Pages</span><span class="sep">—</span>
+      <span>Rediseño</span><span class="sep">—</span>
+      <span>SEO</span><span class="sep">—</span>
+      <span>Mobile First</span><span class="sep">—</span>
+      <span>Diseño Web</span><span class="sep">—</span>
+      <span>Tiendas Online</span><span class="sep">—</span>
+      <span>Landing Pages</span><span class="sep">—</span>
+      <span>Rediseño</span><span class="sep">—</span>
+      <span>SEO</span><span class="sep">—</span>
+      <span>Mobile First</span><span class="sep">—</span>
     </div>
-  </section>
+  </div>
 
-  <!-- POR QUÉ UNA WEB -->
-  <section class="why">
-    <div class="section-tag">¿Por qué importa?</div>
-    <h2>Si no estás en internet, no existís para tus clientes</h2>
-    <p>Hoy la gente busca todo en Google antes de comprar. Una web profesional es la diferencia entre que te elijan a vos o a la competencia.</p>
-    <div class="why-grid">
-      <div class="why-item">
-        <div class="why-icon">🕐</div>
+  <!-- WHY -->
+  <section class="why" id="why">
+    <div class="why-intro">
+      <div class="section-label">¿Por qué importa?</div>
+      <h2>Sin presencia online,<br>tu negocio es invisible.</h2>
+      <p>Hoy el 80% de los consumidores busca en Google antes de comprar. Una web profesional no es un lujo — es tu herramienta de ventas más poderosa.</p>
+      <a href="#contacto" class="btn-primary">Quiero mi web →</a>
+    </div>
+    <div class="why-items">
+      <div class="why-item reveal">
+        <div class="wi-num">01</div>
         <h3>Disponible 24/7</h3>
-        <p>Tu negocio trabaja mientras dormís. Tus clientes pueden encontrarte en cualquier momento.</p>
+        <p>Tu negocio trabaja mientras dormís. Clientes te encuentran en cualquier momento.</p>
       </div>
-      <div class="why-item">
-        <div class="why-icon">🏆</div>
+      <div class="why-item reveal">
+        <div class="wi-num">02</div>
         <h3>Imagen profesional</h3>
         <p>Una web bien diseñada genera confianza al instante y te diferencia de la competencia.</p>
       </div>
-      <div class="why-item">
-        <div class="why-icon">📈</div>
+      <div class="why-item reveal">
+        <div class="wi-num">03</div>
         <h3>Más ventas</h3>
         <p>Convertí visitantes en clientes reales con un diseño pensado para vender.</p>
       </div>
-      <div class="why-item">
-        <div class="why-icon">📍</div>
-        <h3>Más clientes locales</h3>
-        <p>Aparecé en las búsquedas de tu ciudad y captá clientes que ya están buscando lo que ofrecés.</p>
+      <div class="why-item reveal">
+        <div class="wi-num">04</div>
+        <h3>Clientes locales</h3>
+        <p>Aparecé en las búsquedas de tu ciudad y captá quienes ya te buscan.</p>
       </div>
     </div>
   </section>
 
   <!-- PROYECTOS -->
   <section class="projects" id="proyectos">
-    <div class="section-tag">Portfolio</div>
-    <h2>Trabajos realizados</h2>
-    <p class="section-sub">Estos son algunos de los proyectos que diseñé. Cada uno pensado para el negocio específico.</p>
+    <div class="projects-head">
+      <div class="section-label">Portfolio</div>
+      <h2>Trabajos realizados</h2>
+      <p>Cada proyecto pensado para el negocio específico.</p>
+    </div>
 
-    <div class="cards">
+    <div class="projects-list">
 
-      <div class="card">
-        <div class="card-tag">Academia</div>
-        <h3>Academia Impulso</h3>
-        <p>Landing page para academias y espacios de formación. Diseño motivador con llamadas a la acción claras.</p>
-        <ul class="card-features">
-          <li>Secciones de servicios y precios</li>
-          <li>Formulario de consulta</li>
-          <li>Adaptado a celulares</li>
-        </ul>
-        <a href="https://impulso-gym.vercel.app/" class="btn-card" target="_blank">Ver demo →</a>
-      </div>
+      <article class="pj-card reveal">
+        <div class="pj-index">01</div>
+        <div class="pj-body">
+          <div class="pj-tag">Academia · Gym</div>
+          <h3>Impulso Gym</h3>
+          <p>Landing page motivadora para academias. CTAs claros, servicios, precios y formulario de consulta.</p>
+          <ul>
+            <li>Secciones de servicios y precios</li>
+            <li>Formulario de consulta</li>
+            <li>Adaptado a celulares</li>
+          </ul>
+        </div>
+        <a href="https://impulso-gym.vercel.app/" target="_blank" class="pj-link">
+          Ver demo
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </article>
 
-      <div class="card card-featured">
-        <div class="card-tag featured-tag">Más popular</div>
-        <div class="card-tag">Gastronomía</div>
-        <h3>Aura Café</h3>
-        <p>Sitio moderno para mejorar la imagen del negocio y atraer clientes locales con un diseño premium.</p>
-        <ul class="card-features">
-          <li>Menú visual interactivo</li>
-          <li>Integración con redes sociales</li>
-          <li>Diseño premium y elegante</li>
-        </ul>
-        <a href="https://aura-cafe-seven.vercel.app/" class="btn-card" target="_blank">Ver demo →</a>
-      </div>
+      <article class="pj-card pj-featured reveal">
+        <div class="pj-badge">Más popular</div>
+        <div class="pj-index">02</div>
+        <div class="pj-body">
+          <div class="pj-tag">Gastronomía</div>
+          <h3>Aura Café</h3>
+          <p>Sitio premium para mejorar imagen de marca y atraer clientes locales. Estética elegante y moderna.</p>
+          <ul>
+            <li>Menú visual interactivo</li>
+            <li>Integración con redes sociales</li>
+            <li>Diseño premium y elegante</li>
+          </ul>
+        </div>
+        <a href="https://aura-cafe-seven.vercel.app/" target="_blank" class="pj-link">
+          Ver demo
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </article>
 
-      <div class="card">
-        <div class="card-tag">Bar / Noche</div>
-        <h3>Bar Night</h3>
-        <p>Sitio web para bar con sistema de reseñas y reservas con mensaje personalizado al cliente.</p>
-        <ul class="card-features">
-          <li>Sistema de reservas online</li>
-          <li>Sección de reseñas</li>
-          <li>Diseño oscuro y moderno</li>
-        </ul>
-        <a href="https://barber-shop-livid-ten.vercel.app/" class="btn-card" target="_blank">Ver demo →</a>
-      </div>
+      <article class="pj-card reveal">
+        <div class="pj-index">03</div>
+        <div class="pj-body">
+          <div class="pj-tag">Bar · Noche</div>
+          <h3>Bar Night</h3>
+          <p>Sitio oscuro y moderno con sistema de reservas y reseñas integradas para bar.</p>
+          <ul>
+            <li>Sistema de reservas online</li>
+            <li>Sección de reseñas</li>
+            <li>Diseño oscuro y moderno</li>
+          </ul>
+        </div>
+        <a href="https://barber-shop-livid-ten.vercel.app/" target="_blank" class="pj-link">
+          Ver demo
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </article>
 
     </div>
   </section>
 
   <!-- SERVICIOS -->
   <section class="services" id="servicios">
-    <div class="section-tag">¿Qué hago?</div>
-    <h2>Servicios</h2>
-    <p class="section-sub">Todo lo que necesitás para tener presencia online y empezar a conseguir clientes.</p>
+    <div class="services-head">
+      <div class="section-label">¿Qué hago?</div>
+      <h2>Servicios</h2>
+      <p>Todo lo que necesitás para tener presencia online y conseguir más clientes.</p>
+    </div>
 
-    <div class="service-container">
-      <div class="service-block">
-        <div class="service-icon">💻</div>
+    <div class="services-grid">
+      <div class="sv-card reveal">
+        <div class="sv-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="1" y="4" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 9H25" stroke="currentColor" stroke-width="1.5"/><circle cx="4.5" cy="6.5" r="1" fill="currentColor"/><circle cx="7.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </div>
         <h3>Páginas web</h3>
-        <p>Diseño moderno, rápido y pensado para atraer clientes. Desde landing pages hasta sitios completos.</p>
+        <p>Diseño moderno y rápido pensado para convertir. Desde landing pages hasta sitios completos.</p>
         <ul>
           <li>Diseño personalizado</li>
           <li>Adaptado a celulares</li>
@@ -191,11 +240,13 @@
         </ul>
       </div>
 
-      <div class="service-block service-block-featured">
-        <div class="service-badge">⭐ Más solicitado</div>
-        <div class="service-icon">🛒</div>
+      <div class="sv-card sv-featured reveal">
+        <div class="sv-top-badge">⭐ Más solicitado</div>
+        <div class="sv-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M3 7H23V21H3V7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M7 7V5C7 3.9 7.9 3 9 3H17C18.1 3 19 3.9 19 5V7" stroke="currentColor" stroke-width="1.5"/><path d="M13 12V16M11 14H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
         <h3>Tiendas online</h3>
-        <p>Vendé tus productos con un sistema simple, efectivo y fácil de gestionar desde tu celular.</p>
+        <p>Vendé tus productos con un sistema simple, efectivo y fácil de gestionar desde el celular.</p>
         <ul>
           <li>Catálogo de productos</li>
           <li>Integración con pagos</li>
@@ -203,10 +254,12 @@
         </ul>
       </div>
 
-      <div class="service-block">
-        <div class="service-icon">🎨</div>
+      <div class="sv-card reveal">
+        <div class="sv-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M20 6L6 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="19" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+        </div>
         <h3>Rediseño</h3>
-        <p>Tenés web pero se ve vieja o no convierte. La modernizo para que se vea profesional y funcione mejor.</p>
+        <p>Tu web se ve vieja o no convierte. La modernizo para que genere más confianza y ventas.</p>
         <ul>
           <li>Análisis de tu web actual</li>
           <li>Rediseño completo</li>
@@ -218,47 +271,44 @@
 
   <!-- PROCESO -->
   <section class="process">
-    <div class="section-tag">¿Cómo trabajamos?</div>
+    <div class="section-label">¿Cómo trabajamos?</div>
     <h2>Tu web lista en 4 pasos</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-number">01</div>
+    <div class="process-grid">
+      <div class="ps reveal">
+        <div class="ps-num">01</div>
         <h3>Consulta gratis</h3>
-        <p>Me contás tu negocio, tus objetivos y qué necesitás. Sin compromiso.</p>
+        <p>Me contás tu negocio, objetivos y necesidades. Sin compromiso alguno.</p>
       </div>
-      <div class="step-arrow">→</div>
-      <div class="step">
-        <div class="step-number">02</div>
+      <div class="ps reveal">
+        <div class="ps-num">02</div>
         <h3>Propuesta</h3>
-        <p>Te presento el diseño y el plan de trabajo con precios claros.</p>
+        <p>Te presento el diseño y plan de trabajo con precios claros y sin sorpresas.</p>
       </div>
-      <div class="step-arrow">→</div>
-      <div class="step">
-        <div class="step-number">03</div>
+      <div class="ps reveal">
+        <div class="ps-num">03</div>
         <h3>Desarrollo</h3>
-        <p>Diseño y programo tu web con foco en conversión y velocidad.</p>
+        <p>Diseño y programo tu web con foco total en velocidad y conversión.</p>
       </div>
-      <div class="step-arrow">→</div>
-      <div class="step">
-        <div class="step-number">04</div>
+      <div class="ps reveal">
+        <div class="ps-num">04</div>
         <h3>Entrega</h3>
-        <p>Lanzamos tu web y te doy soporte post-entrega sin costo adicional.</p>
+        <p>Lanzamos tu web con soporte post-entrega incluido sin costo extra.</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="contact">
+  <section class="contact" id="contacto">
     <div class="contact-inner">
-      <div class="section-tag">Empezá hoy</div>
-      <h2>¿Listo para tener tu web?</h2>
-      <p>Escribime ahora y en menos de 24 horas te cuento cómo podemos hacer crecer tu negocio online.</p>
+      <div class="section-label inverted">Empezá hoy</div>
+      <h2>¿Listo para crecer online?</h2>
+      <p>Escribime y en menos de 24 hs te muestro cómo hacer crecer tu negocio.</p>
       <div class="contact-perks">
-        <div class="perk">✓ Respuesta rápida</div>
-        <div class="perk">✓ Sin compromiso</div>
-        <div class="perk">✓ Primera consulta gratis</div>
+        <span>✓ Respuesta rápida</span>
+        <span>✓ Sin compromiso</span>
+        <span>✓ Primera consulta gratis</span>
       </div>
-      <a href="https://wa.me/xxxxxxxxxxx" class="btn btn-wa" target="_blank">
+      <a href="https://wa.me/5493794235676" class="btn-wa" target="_blank">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Hablar por WhatsApp
       </a>
@@ -266,42 +316,49 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer>
     <div class="footer-inner">
-      <div class="logo">
-        <div class="logo-icon">IW</div>
-        <span>Impulso Web</span>
-      </div>
-      <p>Diseño web profesional para emprendimientos y negocios.</p>
-      <div class="footer-links">
+      <a href="#inicio" class="logo">
+        <div class="logo-mark inverted"><span>N</span></div>
+        <span class="logo-text" style="color:#fff;">NexoDev</span>
+      </a>
+      <p>Desarrollo web profesional · Corrientes, Argentina</p>
+      <nav class="footer-nav">
         <a href="#inicio">Inicio</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
-      </div>
-      <p class="footer-copy">© 2025 Impulso Web · Corrientes, Argentina</p>
+      </nav>
+      <p class="footer-copy">© 2025 NexoDev</p>
     </div>
   </footer>
 
-  <!-- INSTAGRAM FLOAT -->
-  <a href="https://www.instagram.com/impulsoweb.stdio" target="_blank" class="instagram-float" aria-label="Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 448 512">
-      <path fill="white" d="M224.1 141c-63.6 0-115 51.4-115 115s51.4 115 115 115 115-51.4 115-115-51.4-115-115-115zm0 190c-41.6 0-75-33.4-75-75s33.4-75 75-75 75 33.4 75 75-33.4 75-75 75zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-    </svg>
+  <a href="https://www.instagram.com/impulsoweb.stdio" target="_blank" class="ig-float" aria-label="Instagram">
+    <svg width="20" height="20" viewBox="0 0 448 512"><path fill="white" d="M224.1 141c-63.6 0-115 51.4-115 115s51.4 115 115 115 115-51.4 115-115-51.4-115-115-115zm0 190c-41.6 0-75-33.4-75-75s33.4-75 75-75 75 33.4 75 75-33.4 75-75 75zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
   </a>
 
   <script>
-    const toggle = document.getElementById('menuToggle');
-    const nav = document.getElementById('mainNav');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
-
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', () => nav.classList.remove('open'));
+    const cursor = document.getElementById('cursor');
+    const dotEl = document.getElementById('cursorDot');
+    let mx=0,my=0,cx=0,cy=0;
+    document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dotEl.style.transform=`translate(${mx-4}px,${my-4}px)`;});
+    (function loop(){cx+=(mx-cx)*0.1;cy+=(my-cy)*0.1;cursor.style.transform=`translate(${cx-20}px,${cy-20}px)`;requestAnimationFrame(loop);})();
+    document.querySelectorAll('a,button,.pj-card,.sv-card,.why-item').forEach(el=>{
+      el.addEventListener('mouseenter',()=>cursor.classList.add('big'));
+      el.addEventListener('mouseleave',()=>cursor.classList.remove('big'));
     });
 
-    window.addEventListener('scroll', () => {
-      document.getElementById('header').classList.toggle('scrolled', window.scrollY > 20);
+    const tog=document.getElementById('menuToggle');
+    const nav=document.getElementById('mainNav');
+    tog.addEventListener('click',()=>{tog.classList.toggle('active');nav.classList.toggle('open');});
+    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');tog.classList.remove('active');}));
+
+    window.addEventListener('scroll',()=>{
+      document.getElementById('header').classList.toggle('scrolled',window.scrollY>40);
     });
+
+    const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
   </script>
 </body>
 </html>
